@@ -1,3 +1,3 @@
- programas simples em python e um sistema de cliente-servidor simples .
+ programas em python e um sistema de cliente-servidor simples .
 
  
