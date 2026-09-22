@@ -1,18 +1,20 @@
-# Algoritmo para calcular a hipotenusa de um triângulo retângulo
-# Teorema de Pitágoras: hipotenusa² = cateto1² + cateto2²
-
-import math
+# Algoritmo para calcular a média ponderada
+# MÉDIA = (A * 3 + B * 4 + C * 2 + D * 5) / 14
 
 # Entrada de dados
-cateto_1 = float(input("Digite o comprimento do primeiro cateto: "))
-cateto_2 = float(input("Digite o comprimento do segundo cateto: "))
+A = int(input("Digite o valor de A: "))
+B = int(input("Digite o valor de B: "))
+C = int(input("Digite o valor de C: "))
+D = int(input("Digite o valor de D: "))
 
-# Cálculo da hipotenusa usando o Teorema de Pitágoras
-hipotenusa = math.sqrt((cateto_1 ** 2) + (cateto_2 ** 2))
+# Cálculo da média ponderada
+media = (A * 3 + B * 4 + C * 2 + D * 5) / 14
 
 # Saída dos resultados
 print("\n" + "="*50)
-print(f"Cateto 1: {cateto_1}")
-print(f"Cateto 2: {cateto_2}")
-print(f"Hipotenusa: {hipotenusa:.2f}")
+print(f"Valor de A: {A}")
+print(f"Valor de B: {B}")
+print(f"Valor de C: {C}")
+print(f"Valor de D: {D}")
+print(f"Média ponderada: {media:.2f}")
 print("="*50)

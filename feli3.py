@@ -1,26 +1,14 @@
-# Algoritmo para calcular a média de três notas de um aluno
+# Algoritmo para converter horas e minutos em apenas minutos
 
 # Entrada de dados
-nome_aluno = input("Digite o nome do aluno: ")
-nota_1 = float(input("Digite a primeira nota: "))
-nota_2 = float(input("Digite a segunda nota: "))
-nota_3 = float(input("Digite a terceira nota: "))
+horas = int(input("Digite o número de horas: "))
+minutos = int(input("Digite o número de minutos: "))
 
-# Cálculo da média
-media = (nota_1 + nota_2 + nota_3) / 3
-
-# Determinação da situação (aprovado/reprovado)
-if media >= 7.0:
-    situacao = "APROVADO"
-else:
-    situacao = "REPROVADO"
+# Cálculo da conversão para minutos
+minutos_totais = (horas * 60) + minutos
 
 # Saída dos resultados
-print("\n" + "="*50)
-print(f"Aluno: {nome_aluno}")
-print(f"Nota 1: {nota_1}")
-print(f"Nota 2: {nota_2}")
-print(f"Nota 3: {nota_3}")
-print(f"Média: {media:.2f}")
-print(f"Situação: {situacao}")
-print("="*50)
+print("\n" + "="*45)
+print(f"Tempo informado: {horas}h {minutos}min")
+print(f"Total em minutos: {minutos_totais} minutos")
+print("="*45)

@@ -1,22 +1,25 @@
-# Algoritmo para calcular o valor da prestação com atraso
-# NOVA PRESTAÇÃO = PRESTAÇÃO ATUAL + (PRESTAÇÃO ATUAL * TAXA * DIAS) / 100
+# Algoritmo para calcular o volume de um cilindro regular
+# VOLUME = ÁREA DA BASE * ALTURA
+# ÁREA DA BASE = π * R²
+# Onde π = 3,14
+
+# Constante
+PI = 3.14
 
 # Entrada de dados
-prestacao_atual = float(input("Digite o valor da prestação atrasada: R$ "))
-taxa_juros = float(input("Digite a taxa de juros (em %): "))
-dias_atraso = int(input("Digite o número de dias de atraso: "))
+raio = float(input("Digite o raio do cilindro: "))
+altura = float(input("Digite a altura do cilindro: "))
 
-# Cálculo dos juros
-juros = (prestacao_atual * taxa_juros * dias_atraso) / 100
+# Cálculo da área da base
+area_base = PI * (raio ** 2)
 
-# Cálculo da nova prestação
-nova_prestacao = prestacao_atual + juros
+# Cálculo do volume
+volume = area_base * altura
 
 # Saída dos resultados
 print("\n" + "="*50)
-print(f"Prestação original: R$ {prestacao_atual:.2f}")
-print(f"Taxa de juros: {taxa_juros}%")
-print(f"Dias de atraso: {dias_atraso}")
-print(f"Juros acumulados: R$ {juros:.2f}")
-print(f"Nova prestação: R$ {nova_prestacao:.2f}")
+print(f"Raio do cilindro: {raio}")
+print(f"Altura do cilindro: {altura}")
+print(f"Área da base: {area_base:.2f}")
+print(f"Volume do cilindro: {volume:.2f}")
 print("="*50)

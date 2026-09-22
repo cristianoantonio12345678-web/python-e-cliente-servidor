@@ -1,20 +1,22 @@
-# Algoritmo para calcular a média ponderada
-# MÉDIA = (A * 7 + B * 3 + C * 4 + D * 2) / 16
+# Algoritmo para calcular o valor da prestação com atraso
+# NOVA PRESTAÇÃO = PRESTAÇÃO ATUAL + (PRESTAÇÃO ATUAL * TAXA * DIAS) / 100
 
 # Entrada de dados
-A = int(input("Digite o valor de A: "))
-B = int(input("Digite o valor de B: "))
-C = int(input("Digite o valor de C: "))
-D = int(input("Digite o valor de D: "))
+prestacao_atual = float(input("Digite o valor da prestação atrasada: R$ "))
+taxa_juros = float(input("Digite a taxa de juros (em %): "))
+dias_atraso = int(input("Digite o número de dias de atraso: "))
 
-# Cálculo da média ponderada
-media = (A * 7 + B * 3 + C * 4 + D * 2) / 16
+# Cálculo dos juros
+juros = (prestacao_atual * taxa_juros * dias_atraso) / 100
+
+# Cálculo da nova prestação
+nova_prestacao = prestacao_atual + juros
 
 # Saída dos resultados
 print("\n" + "="*50)
-print(f"Valor de A: {A}")
-print(f"Valor de B: {B}")
-print(f"Valor de C: {C}")
-print(f"Valor de D: {D}")
-print(f"Média ponderada: {media:.2f}")
+print(f"Prestação original: R$ {prestacao_atual:.2f}")
+print(f"Taxa de juros: {taxa_juros}%")
+print(f"Dias de atraso: {dias_atraso}")
+print(f"Juros acumulados: R$ {juros:.2f}")
+print(f"Nova prestação: R$ {nova_prestacao:.2f}")
 print("="*50)
